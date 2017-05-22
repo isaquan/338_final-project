@@ -54,3 +54,7 @@ a:hover{
 .quotes {
 	clear: both;
 }
+
+.fa{
+	align-self: center;
+}
