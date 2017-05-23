@@ -42,12 +42,15 @@ a:hover{
 	text-align: center;
 	padding: 80px 0px;
 	font-size: 5em;
-	
+	background-image: url(../images/palms.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 
 .intro {
 	text-align: center;
 	font-weight: 400;
+	padding: 0;
 	
 }
 
@@ -55,6 +58,38 @@ a:hover{
 	clear: both;
 }
 
-.fa{
+.insta{
+	color: black;
+	display: block;
+	margin: 100px 50% 10px 50%;
+	padding: 0px;
+	
+}
+
+.insta:link{
+	color: black;
+}
+
+.insta:visited{
+	color: black;
+}
+
+.insta:hover{
+	color: lightgray;
+}
+
+.type{
+	
 	align-self: center;
+	width: 400px;
+	margin: auto auto auto 15%;
+	float: left;
+}
+
+.descrp{
+	padding: 50px;
+	display: block;
+	width: 500px;
+	height: 400px;
+	float: left;
 }
