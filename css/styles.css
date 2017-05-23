@@ -78,7 +78,16 @@ a:hover{
 	color: lightgray;
 }
 
-.pics{
+/*--- END OF HOMEPAGE ---*/
+
+/*--- START OF WORDS PAGE ---*/
+
+table{
+	clear: both;
+	margin: 25px;
+}
+
+/*.pics{
 	position: relative;
 	top: 0px;
   	left: 0px;
@@ -86,7 +95,7 @@ a:hover{
 	height: 400px;
 	margin: auto auto auto 15%;
 	
-}
+}*/
 
 /*.descrp{
 	padding: 50px;
@@ -96,6 +105,7 @@ a:hover{
 	float: left;
 }*/
 
+/*
 .descrp{
 	height: 400px;
 	width: 400px;
@@ -105,7 +115,7 @@ a:hover{
   	visibility: hidden;
   	opacity: 0;
 
-  /* transition effect. not necessary */
+
   transition: opacity .2s, visibility .2s;
 	padding: 50px;
 }
@@ -114,3 +124,40 @@ a:hover{
   visibility: visible;
   opacity: 1;
 }
+*/
+
+/* HOVER EFFECT CODE TAKEN FROM https://stackoverflow.com/questions/14263594/how-to-show-text-on-image-when-hovering */
+
+h1{
+	clear: both;
+	
+}
+
+.pics {
+	position: relative;
+	height: 400px;
+	width: 400px;
+	margin: 25%;
+}
+
+.descrp {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: lightgray;
+	color: black;
+	visibility: visible;
+	opacity: 0;
+	transition: opacity 1s, visibility .5s;
+	padding: 50px;
+}
+
+.pics:hover .descrp {
+	visibility: visible;
+	opacity: .75;
+}
+
+
+
