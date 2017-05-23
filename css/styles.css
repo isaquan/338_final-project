@@ -79,11 +79,12 @@ a:hover{
 }
 
 .type{
-	
-	align-self: center;
+	position: relative;
 	width: 400px;
+	height: 400px;
 	margin: auto auto auto 15%;
 	float: left;
+	
 }
 
 .descrp{
@@ -92,4 +93,26 @@ a:hover{
 	width: 500px;
 	height: 400px;
 	float: left;
+}
+
+h3{
+	height: 400px;
+	width: 400px;
+	align-content: absolute;
+  	top: 0;
+  	bottom: 0;
+  	left: 0;
+  	right: 0;
+  	background: lightgray;
+  	color: #fff;
+  	visibility: hidden;
+  	opacity: 0;
+
+  /* transition effect. not necessary */
+  transition: opacity .2s, visibility .2s;
+}
+
+.type:hover h3 {
+  visibility: visible;
+  opacity: 1;
 }
