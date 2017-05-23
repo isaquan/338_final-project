@@ -78,31 +78,28 @@ a:hover{
 	color: lightgray;
 }
 
-.type{
+.pics{
 	position: relative;
+	top: 0px;
+  	left: 0px;
 	width: 400px;
 	height: 400px;
 	margin: auto auto auto 15%;
-	float: left;
 	
 }
 
-.descrp{
+/*.descrp{
 	padding: 50px;
 	display: block;
 	width: 500px;
 	height: 400px;
 	float: left;
-}
+}*/
 
-h3{
+.descrp{
 	height: 400px;
 	width: 400px;
 	align-content: absolute;
-  	top: 0;
-  	bottom: 0;
-  	left: 0;
-  	right: 0;
   	background: lightgray;
   	color: #fff;
   	visibility: hidden;
@@ -110,9 +107,10 @@ h3{
 
   /* transition effect. not necessary */
   transition: opacity .2s, visibility .2s;
+	padding: 50px;
 }
 
-.type:hover h3 {
+.pics:hover .descrp {
   visibility: visible;
   opacity: 1;
 }
