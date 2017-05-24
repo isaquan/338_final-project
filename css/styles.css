@@ -28,13 +28,18 @@ a:link{
 	color: black;
 }
 
+a:visited{
+	color: black;
+}
+
 a:hover{
 	color: lightgray;
 }
 
+
 /* --- END OF NAV --- */
 
-.welcome {
+/*.welcome {
 	clear: both;
 	background-color: black;
 	width: 100%;
@@ -42,40 +47,54 @@ a:hover{
 	text-align: center;
 	padding: 80px 0px;
 	font-size: 5em;
-	background-image: url(../images/palms.jpg);
+	background-image: url(../images/palmstype.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
+	background-position: center;
+}
+*/
+
+.sand{
+	display: block;
+	clear: both;
+	width: 100%;
+	margin: 0 auto;
+	
 }
 
 .intro {
 	text-align: center;
-	font-weight: 400;
+	font-weight: 200;
 	padding: 0;
-	
-}
-
-.quotes {
-	clear: both;
+	margin: 50px auto;
+	width: 600px;
 }
 
 .insta{
 	color: black;
 	display: block;
-	margin: 100px 50% 10px 50%;
-	padding: 0px;
+	clear: both;
+	margin: 0 auto;
+	text-align: center;
 	
-}
-
-.insta:link{
-	color: black;
 }
 
 .insta:visited{
 	color: black;
 }
 
-.insta:hover{
+.follow{
+	margin: 0 auto;
 	color: lightgray;
+	visibility: visible;
+	opacity: 0;
+	transition: opacity .2s, visibility .1s;
+}
+
+
+.insta:hover .follow{
+	visibility: visible;
+	opacity: .75;
 }
 
 /*--- END OF HOMEPAGE ---*/
@@ -132,6 +151,8 @@ div:first-child{
 .container{
 	width: 1200px;
 	margin: 0 auto;
+	padding-top: 120px;
+
 }
 
 
@@ -161,7 +182,7 @@ div:first-child{
 
 .pics:hover .descrp {
 	visibility: visible;
-	opacity: .75;
+	opacity: .90;
 }
 
 
