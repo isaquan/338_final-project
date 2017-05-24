@@ -1,0 +1,53 @@
+commit e1259d6be40a5f70a58baab9c3779133e54b59d8
+Author: [Isabel Quan] <[isaquan@hotmail.com]>
+Date:   Tue May 23 14:59:16 2017 -0700
+
+    Table, hover, images added, need to add more content later
+
+commit 49579800cbd213a098fc3088d8086698e0123e45
+Author: [Isabel Quan] <[isaquan@hotmail.com]>
+Date:   Tue May 23 14:32:08 2017 -0700
+
+    Putting elements into table to see if grid works
+
+commit e4afa02116f0099abf1088bb3a0b075bdc54078b
+Author: [Isabel Quan] <[isaquan@hotmail.com]>
+Date:   Tue May 23 14:19:21 2017 -0700
+
+    Attempting to add hovering date above images
+
+commit a9487aeed6d10aa1c96d8761002f16659257478f
+Author: [Isabel Quan] <[isaquan@hotmail.com]>
+Date:   Tue May 23 14:02:15 2017 -0700
+
+    Started adding images and descriptions to Words page
+
+commit 0963be17d28317dcbe5a9356a83e163ecf7587e0
+Author: [Isabel Quan] <[isaquan@hotmail.com]>
+Date:   Mon May 22 00:01:01 2017 -0700
+
+    Add ig logo
+
+commit f5da722940ff93c5acf1590a663aaeabf2da3314
+Author: Isabel Quan <iquan@calpoly.edu>
+Date:   Tue May 16 14:51:03 2017 -0700
+
+    Add instagram link to homepage
+
+commit e2bd074a64be1cb9ad408b7fef7bbfff39599f13
+Author: Isabel Quan <iquan@calpoly.edu>
+Date:   Tue May 16 14:28:44 2017 -0700
+
+    Add words, quotes, about pages
+
+commit a6c4123824f6e083110d38c419f34cf1cfb79d53
+Author: Isabel Quan <iquan@calpoly.edu>
+Date:   Tue May 16 14:22:49 2017 -0700
+
+    Create home page and  stylize title, header, greeting
+
+commit 364d51ba096b287e96e26b4e67f427827c39b5f6
+Author: Isabel Quan <iquan@calpoly.edu>
+Date:   Tue May 16 13:05:59 2017 -0700
+
+    Add files

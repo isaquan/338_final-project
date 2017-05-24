@@ -82,10 +82,6 @@ a:hover{
 
 /*--- START OF WORDS PAGE ---*/
 
-table{
-	clear: both;
-	margin: 25px;
-}
 
 /*.pics{
 	position: relative;
@@ -126,18 +122,27 @@ table{
 }
 */
 
-/* HOVER EFFECT CODE TAKEN FROM https://stackoverflow.com/questions/14263594/how-to-show-text-on-image-when-hovering */
 
-h1{
+/* Makes first image start after nav, images after should float left */
+div:first-child{
 	clear: both;
-	
 }
+
+/* Centers three images to browser size */
+.container{
+	width: 1200px;
+	margin: 0 auto;
+}
+
+
+/* HOVER EFFECT CODE TAKEN FROM https://stackoverflow.com/questions/14263594/how-to-show-text-on-image-when-hovering */
 
 .pics {
 	position: relative;
 	height: 400px;
 	width: 400px;
-	margin: 25%;
+	float: left;
+	margin: 0px;
 }
 
 .descrp {

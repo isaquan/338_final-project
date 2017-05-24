@@ -1,0 +1,130 @@
+Last login: Tue May 16 12:03:17 on console
+grc-germany:~ iquan$ cd Desktop
+grc-germany:Desktop iquan$ cd 338_03_Quan_final
+grc-germany:338_03_Quan_final iquan$ touch home.html
+grc-germany:338_03_Quan_final iquan$ pwd
+/Users/iquan/Desktop/338_03_Quan_final
+grc-germany:338_03_Quan_final iquan$ git init
+Initialized empty Git repository in /Users/iquan/Desktop/338_03_Quan_final/.git/
+grc-germany:338_03_Quan_final iquan$ git add -A
+grc-germany:338_03_Quan_final iquan$ git commit -am "Add files"
+[master (root-commit) 364d51b] Add files
+ 4 files changed, 13 insertions(+)
+ create mode 100644 .DS_Store
+ create mode 100644 css/.DS_Store
+ create mode 100644 css/styles.css
+ create mode 100644 home.html
+grc-germany:338_03_Quan_final iquan$ git remote add origin https://github.com/isaquan/338_final-project.git
+grc-germany:338_03_Quan_final iquan$ git push -u origin master
+Counting objects: 7, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (7/7), 1.18 KiB | 0 bytes/s, done.
+Total 7 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), done.
+To https://github.com/isaquan/338_final-project.git
+ * [new branch]      master -> master
+Branch master set up to track remote branch master from origin.
+grc-germany:338_03_Quan_final iquan$ git commit -am "Create home page and  stylize title, header, greeting"
+[master a6c4123] Create home page and  stylize title, header, greeting
+ 4 files changed, 68 insertions(+), 1 deletion(-)
+grc-germany:338_03_Quan_final iquan$ git commit -A 
+error: unknown switch `A'
+usage: git commit [<options>] [--] <pathspec>...
+
+    -q, --quiet           suppress summary after successful commit
+    -v, --verbose         show diff in commit message template
+
+Commit message options
+    -F, --file <file>     read message from file
+    --author <author>     override author for commit
+    --date <date>         override date for commit
+    -m, --message <message>
+                          commit message
+    -c, --reedit-message <commit>
+                          reuse and edit message from specified commit
+    -C, --reuse-message <commit>
+                          reuse message from specified commit
+    --fixup <commit>      use autosquash formatted message to fixup specified commit
+    --squash <commit>     use autosquash formatted message to squash specified commit
+    --reset-author        the commit is authored by me now (used with -C/-c/--amend)
+    -s, --signoff         add Signed-off-by:
+    -t, --template <file>
+                          use specified template file
+    -e, --edit            force edit of commit
+    --cleanup <default>   how to strip spaces and #comments from message
+    --status              include status in commit message template
+    -S, --gpg-sign[=<key-id>]
+                          GPG sign commit
+
+Commit contents options
+    -a, --all             commit all changed files
+    -i, --include         add specified files to index for commit
+    --interactive         interactively add files
+    -p, --patch           interactively add changes
+    -o, --only            commit only specified files
+    -n, --no-verify       bypass pre-commit and commit-msg hooks
+    --dry-run             show what would be committed
+    --short               show status concisely
+    --branch              show branch information
+    --porcelain           machine-readable output
+    --long                show status in long format (default)
+    -z, --null            terminate entries with NUL
+    --amend               amend previous commit
+    --no-post-rewrite     bypass post-rewrite hook
+    -u, --untracked-files[=<mode>]
+                          show untracked files, optional modes: all, normal, no. (Default: all)
+
+grc-germany:338_03_Quan_final iquan$ git add -A
+grc-germany:338_03_Quan_final iquan$ git commit -am "Add words, quotes, about pages"
+[master e2bd074] Add words, quotes, about pages
+ 4 files changed, 85 insertions(+)
+ create mode 100644 about.html
+ create mode 100644 quotes.html
+ create mode 100644 words.html
+grc-germany:338_03_Quan_final iquan$ git push
+Counting objects: 14, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (14/14), done.
+Writing objects: 100% (14/14), 2.03 KiB | 0 bytes/s, done.
+Total 14 (delta 6), reused 0 (delta 0)
+remote: Resolving deltas: 100% (6/6), completed with 2 local objects.
+To https://github.com/isaquan/338_final-project.git
+   364d51b..e2bd074  master -> master
+grc-germany:338_03_Quan_final iquan$ git commit -am "Add instagram link to homepage"
+[master f5da722] Add instagram link to homepage
+ 3 files changed, 4 insertions(+), 1 deletion(-)
+grc-germany:338_03_Quan_final iquan$ git push
+Counting objects: 6, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 1022 bytes | 0 bytes/s, done.
+Total 6 (delta 3), reused 0 (delta 0)
+remote: Resolving deltas: 100% (3/3), completed with 3 local objects.
+To https://github.com/isaquan/338_final-project.git
+   e2bd074..f5da722  master -> master
+grc-germany:338_03_Quan_final iquan$ git log
+commit f5da722940ff93c5acf1590a663aaeabf2da3314
+Author: Isabel Quan <iquan@calpoly.edu>
+Date:   Tue May 16 14:51:03 2017 -0700
+
+    Add instagram link to homepage
+
+commit e2bd074a64be1cb9ad408b7fef7bbfff39599f13
+Author: Isabel Quan <iquan@calpoly.edu>
+Date:   Tue May 16 14:28:44 2017 -0700
+
+    Add words, quotes, about pages
+
+commit a6c4123824f6e083110d38c419f34cf1cfb79d53
+Author: Isabel Quan <iquan@calpoly.edu>
+Date:   Tue May 16 14:22:49 2017 -0700
+
+    Create home page and  stylize title, header, greeting
+
+commit 364d51ba096b287e96e26b4e67f427827c39b5f6
+Author: Isabel Quan <iquan@calpoly.edu>
+Date:   Tue May 16 13:05:59 2017 -0700
+
+    Add files
+:
