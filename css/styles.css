@@ -1,12 +1,12 @@
 @charset "UTF-8";
 /* CSS Document */
 
-
 /*---------------STARTING ISABEL'S 338 FINAL PROJECT HERE-----------------*/
 
 *{
-	font-family: 'Work Sans', sans-serif;
+	font-family: 'Work Sans', sans-serif; /* All text is Work Sans from Google Fonts */
 }
+
 
 /* --- NAVIGATION BAR --- */
 nav{
@@ -44,6 +44,8 @@ a:hover{
 
 
 /* --- HOME PAGE ---*/
+
+/*Banner image*/
 .sand{
 	display: block;
 	clear: both;
@@ -52,6 +54,7 @@ a:hover{
 	
 }
 
+/* Website description */
 .intro {
 	text-align: center;
 	font-weight: 200;
@@ -60,20 +63,21 @@ a:hover{
 	width: 50%;
 }
 
+/* Instagram link that shows "Follow me!" when hovered over */
 .insta{
 	color: black;
 	display: block;
 	clear: both;
 	margin: 0 auto;
 	text-align: center;
-	
 }
 
-.insta:visited{
+.insta:visited:hover{
 	color: black;
 }
 
 .follow{
+	position: absolute;
 	margin: 0 auto;
 	color: lightgray;
 	visibility: visible;
@@ -82,54 +86,15 @@ a:hover{
 }
 
 
-.insta:hover .follow{
+.insta:hover + .follow{
 	visibility: visible;
 	opacity: 1;
 }
 /*--- END OF HOMEPAGE ---*/
 
 
+
 /*--- START OF WORDS AND QUOTES PAGE ---*/
-
-/*.pics{
-	position: relative;
-	top: 0px;
-  	left: 0px;
-	width: 400px;
-	height: 400px;
-	margin: auto auto auto 15%;
-	
-}*/
-
-/*.descrp{
-	padding: 50px;
-	display: block;
-	width: 500px;
-	height: 400px;
-	float: left;
-}*/
-
-/*
-.descrp{
-	height: 400px;
-	width: 400px;
-	align-content: absolute;
-  	background: lightgray;
-  	color: #fff;
-  	visibility: hidden;
-  	opacity: 0;
-
-
-  transition: opacity .2s, visibility .2s;
-	padding: 50px;
-}
-
-.pics:hover .descrp {
-  visibility: visible;
-  opacity: 1;
-}
-*/
-
 
 /* Makes first image start after nav, images after should float left */
 div:first-child{
@@ -143,12 +108,11 @@ div:first-child{
 	padding-top: 120px;
 
 }
-
+ /* Adds photo creds at bottom right of image*/
 .descrp .cred{
 	position: absolute;
 	bottom: 15px;
 	right: 25px;
-	text-align: right;
 	font-weight: 200;
 	color: black;
 	font-size: .75em;
@@ -156,6 +120,7 @@ div:first-child{
 
 /* HOVER EFFECT CODE TAKEN FROM https://stackoverflow.com/questions/14263594/how-to-show-text-on-image-when-hovering */
 
+/* Hover effect shows text behind light gray background */
 .pics {
 	position: relative;
 	height: 400px;
@@ -183,5 +148,17 @@ div:first-child{
 	opacity: .90;
 }
 
+/* --- END OF WORDS AND QUOTES STYLING ---*/
 
+/* ---START OF ABOUT PAGE --- */
+
+.hello{
+	clear: both;
+	width: 40%;
+	margin-left: 5%;
+	margin-top: 120px;
+	font-weight: 200;
+	line-height: 1.5em;
+	
+}
 
