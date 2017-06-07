@@ -1,8 +1,6 @@
 @charset "UTF-8";
 /* CSS Document */
 
-/*---------------STARTING ISABEL'S 338 FINAL PROJECT HERE-----------------*/
-
 *{
 	font-family: 'Work Sans', sans-serif; /* All text is Work Sans from Google Fonts */
 }
@@ -49,12 +47,19 @@ a:hover{
 /*Banner image*/
 .sand{
 	display: block;
-	clear: both;
 	width: 100%;
-	margin: 0 auto;
+	position: relative;
 	min-width: 1000px;
+	overflow: hidden;
+	margin: 0 auto;
+
 	
 }
+
+.title{
+	background-image: url(../images/sandybanner.jpg);
+}
+
 
 /* Website description */
 .intro {
@@ -79,12 +84,13 @@ a:hover{
 }
 
 .follow{
-	margin: 0 auto;
 	color: lightgray;
 	visibility: visible;
 	opacity: 0;
 	transition: opacity .2s, visibility .1s;
+	margin: 0 auto;
 }
+
 
 
 .insta:hover + .follow{
@@ -98,7 +104,7 @@ a:hover{
 /*--- START OF WORDS AND QUOTES PAGE ---*/
 
 /* Makes first image start after nav, images after should float left */
-div:first-child{
+.container:first-child{
 	clear: both;
 }
 
@@ -161,6 +167,16 @@ div:first-child{
 	padding-top: 150px;
 	font-weight: 200;
 	line-height: 1.5em;
-	
+	position: fixed;
 }
 
+.me{
+	display: block;
+	float: right;
+	border-radius: 50%;
+	width: 600px;
+	position: absolute;
+	z-index: -1;
+	right: 5%;
+	top: 70px;
+}
