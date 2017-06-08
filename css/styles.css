@@ -5,7 +5,6 @@
 	font-family: 'Work Sans', sans-serif; /* All text is Work Sans from Google Fonts */
 }
 
-
 /* --- NAVIGATION BAR --- */
 nav{
 	font-weight: 200;
@@ -38,26 +37,20 @@ a:visited{
 a:hover{
 	color: lightgray;
 }
-/* --- END OF NAV --- */
+/* -------------- END OF NAV ------------- */
 
 
 
-/* --- HOME PAGE ---*/
+/* -------------- HOME PAGE --------------*/
 
 /*Banner image*/
 .sand{
 	display: block;
 	width: 100%;
 	position: relative;
-	min-width: 1000px;
+	min-width: 300px;
 	overflow: hidden;
 	margin: 0 auto;
-
-	
-}
-
-.title{
-	background-image: url(../images/sandybanner.jpg);
 }
 
 
@@ -89,19 +82,19 @@ a:hover{
 	opacity: 0;
 	transition: opacity .2s, visibility .1s;
 	margin: 0 auto;
+	text-align: center;
 }
-
-
 
 .insta:hover + .follow{
 	visibility: visible;
 	opacity: 1;
+	
 }
-/*--- END OF HOMEPAGE ---*/
+/*---------- END OF HOMEPAGE ---------*/
 
 
 
-/*--- START OF WORDS AND QUOTES PAGE ---*/
+/*--------------- START OF WORDS AND QUOTES PAGE --------------*/
 
 /* Makes first image start after nav, images after should float left */
 .container:first-child{
@@ -112,7 +105,9 @@ a:hover{
 .container{
 	width: 1200px;
 	margin: 0 auto;
-	padding-top: 120px;
+	padding: 0;
+	padding-top: 110px;
+	margin-bottom: 120px;
 
 }
  /* Adds photo creds at bottom right of image*/
@@ -155,11 +150,26 @@ a:hover{
 	opacity: .90;
 }
 
-/* --- END OF WORDS AND QUOTES STYLING ---*/
+.to-top{
+	background: none;
+	margin: 0;
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	width: 70px;
+	height: 70px;
+	z-index: 100;
+	display: none;
+	text-decoration: none;
+	color: red;
+	background-color: #ff9000;
+}
 
-/* ---START OF ABOUT PAGE --- */
+/* ----------------- END OF WORDS AND QUOTES STYLING ---------------*/
 
-.hello{
+/* ------------------START OF ABOUT PAGE -------------- */
+
+.hello{ /* About me description */
 	clear: both;
 	width: 40%;
 	margin-top: 0px;
@@ -167,10 +177,10 @@ a:hover{
 	padding-top: 150px;
 	font-weight: 200;
 	line-height: 1.5em;
-	position: fixed;
+	
 }
 
-.me{
+.me{ /* Photo of me */
 	display: block;
 	float: right;
 	border-radius: 50%;
@@ -178,5 +188,11 @@ a:hover{
 	position: absolute;
 	z-index: -1;
 	right: 5%;
-	top: 70px;
+	top: 100px;
+}
+
+span{
+	font-weight: 200;
+	color: black;
+	font-size: .75em;
 }
