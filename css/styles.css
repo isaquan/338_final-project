@@ -5,7 +5,7 @@
 	font-family: 'Work Sans', sans-serif; /* All text is Work Sans from Google Fonts */
 }
 
-/* --- NAVIGATION BAR --- */
+/* ---------- NAVIGATION BAR ---------- */
 nav{
 	font-weight: 200;
 	text-transform: uppercase;
@@ -120,6 +120,9 @@ a:hover{
 	font-size: .75em;
 }
 
+span{
+	font-style: italic;
+}
 /* HOVER EFFECT CODE TAKEN FROM https://stackoverflow.com/questions/14263594/how-to-show-text-on-image-when-hovering */
 
 /* Hover effect shows text behind light gray background */
@@ -150,6 +153,9 @@ a:hover{
 	opacity: .90;
 }
 
+/* BACK TO TOP BUTTON CODE TAKEN FROM https://www.w3schools.com/howto/howto_js_scroll_to_top.asp */
+
+/* Add a 'back to top' button on the bottom right corner of browser */
 #to-top {
     display: none; /* Hidden by default */
     position: fixed; /* Fixed/sticky position */
@@ -168,9 +174,9 @@ a:hover{
     background-color: #555; /* Add a dark-grey background on hover */
 }
 
-
-
 /* ----------------- END OF WORDS AND QUOTES STYLING ---------------*/
+
+
 
 /* ------------------START OF ABOUT PAGE -------------- */
 
@@ -182,7 +188,6 @@ a:hover{
 	padding-top: 150px;
 	font-weight: 200;
 	line-height: 1.5em;
-	
 }
 
 .me{ /* Photo of me */
@@ -196,7 +201,8 @@ a:hover{
 	top: 100px;
 }
 
-span{
+.hello span{ /* Small side note at the end of about descrp */
+	font-style: normal; /* Gets rid of span italic from earlier */
 	font-weight: 200;
 	color: black;
 	font-size: .75em;
