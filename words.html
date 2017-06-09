@@ -7,6 +7,8 @@
 
 <link href="https://fonts.googleapis.com/css?family=Work+Sans:200,400,900" rel="stylesheet">
 
+<script src="https://use.fontawesome.com/6eec860202.js"></script>
+
 <meta charset="UTF-8">
 <title>Words | Type and Stuff</title>
 </head>
@@ -118,10 +120,29 @@
 			</li>	
 	</ul>
 	
-	<div>
-	  <a class="insta" href="https://www.instagram.com/iq.type/" target="_blank"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
-	  <p class="follow">Follow me!</p>
-	</div>
+	
+	<!-- BUTTON FOR SCROLL TO TOP - CODE TAKEN FORM https://www.w3schools.com/howto/howto_js_scroll_to_top.asp -->
+	
+	<button onclick="topFunction()" id="to-top" title="Back to top"><i class="fa fa-angle-up" aria-hidden="true"></i></button>
+
+	<script>
+		// When the user scrolls down 100px from the top of the document, show the button
+		window.onscroll = function() {scrollFunction()};
+
+		function scrollFunction() {
+			if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+				document.getElementById("to-top").style.display = "block";
+			} else {
+				document.getElementById("to-top").style.display = "none";
+			}
+		}
+
+		// When the user clicks on the button, scroll to the top of the document
+		function topFunction() {
+			document.body.scrollTop = 0; // For Chrome, Safari and Opera 
+			document.documentElement.scrollTop = 0; // For IE and Firefox
+		}
+	</script>
 
 </body>
 </html>

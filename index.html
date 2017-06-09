@@ -23,7 +23,7 @@
 	</nav>
 
 	
-		<img class="sand" src="images/sandytype-n.jpg" alt="type and stuff"> <!--image by Mariusz Prusaczyk from Unsplash, text by IQ-->
+	<img class="sand" src="images/sandytype-n.jpg" alt="type and stuff"> <!--image by Mariusz Prusaczyk from Unsplash, text by IQ-->
 	
 
 	<div class="intro">
@@ -33,12 +33,35 @@
 		<p>It's whatever.</p>
 	</div>
 
-	<!--Instagram logo for button-->
 
+	<!--Instagram logo for button-->
 	<div>
 	  <a class="insta" href="https://www.instagram.com/iq.type/" target="_blank"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
 	  <p class="follow">Follow me!</p>
 	</div>
+	
+	<button onclick="topFunction()" id="to-top" title="Go to top">^</button>
+	
+
+	<script>
+	// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0; // For Chrome, Safari and Opera 
+    document.documentElement.scrollTop = 0; // For IE and Firefox
+}
+
+		</script>	
 
 </body>
 </html>
